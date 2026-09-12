@@ -6,5 +6,126 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- ========================= -->
+    <!-- PAGE-->
+    <!-- ========================= -->
+    <div class="page">
+      <main class="page__main">
+        <!-- ========================= -->
+        <!-- CRAFTING-->
+        <!-- ========================= -->
+        <section class="crafting">
+          <!-- Header -->
+          <header class="crafting__header">
+            <span class="crafting__eyebrow">CRAFTING CALCULATOR</span>
+
+            <h1 class="crafting__title">Calcular Materiales Requeridos</h1>
+
+            <p class="crafting__description">
+              Selecciona los artículos y cantidades para conocer los materiales
+              necesarios
+            </p>
+          </header>
+
+          <div class="crafting__content">
+            <!-- ========================= -->
+            <!-- ITEMS BOARD -->
+            <!-- ========================= -->
+            <div class="board">
+              <div class="board__header">
+                <h2 class="board__title">Lista de artículos</h2>
+              </div>
+
+              <table class="board__table">
+                <thead class="board__head">
+                  <tr class="board__row">
+                    <th class="board__cell board__cell--item">item</th>
+                    <th class="board__cell board__cell--quantity">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="board__row">
+                    <td class="board__cell board__cell--item">
+                      <div class="board__item">
+                        <img
+                          src="https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png"
+                          alt="item image"
+                          class="board__icon"
+                        />
+                        <span>item 1</span>
+                      </div>
+                    </td>
+                    <td class="board__cell board__cell--quantity">
+                      <input type="number" class="board__input" />
+                    </td>
+                  </tr>
+                  <tr class="board__row">
+                    <td class="board__cell board__cell--item">
+                      <div class="board__item">
+                        <img
+                          src="https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png"
+                          alt="item image"
+                          class="board__icon"
+                        />
+                        <span>item 1</span>
+                      </div>
+                    </td>
+                    <td class="board__cell board__cell--quantity">
+                      <input type="number" class="board__input" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- ========================= -->
+            <!-- MATERIALS BOARD -->
+            <!-- ========================= -->
+            <div class="board">
+              <div class="board__header">
+                <h2 class="board__title">Materiales requeridos</h2>
+              </div>
+
+              <table class="board__table">
+                <thead class="board__head">
+                  <tr class="board__row">
+                    <th class="board__cell board__cell--item">Item</th>
+                    <th class="board__cell board__cell--quantity">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="board__row">
+                    <td class="board__cell board__cell--item">
+                      <div class="board__item">
+                        <img
+                          src="https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png"
+                          alt="item image"
+                          class="board__icon"
+                        />
+                        <span>item 1</span>
+                      </div>
+                    </td>
+                    <td class="board__cell board__cell--quantity">2</td>
+                  </tr>
+                  <tr class="board__row">
+                    <td class="board__cell board__cell--item">
+                      <div class="board__item">
+                        <img
+                          src="https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png"
+                          alt="item image"
+                          class="board__icon"
+                        />
+                        <span>item 1</span>
+                      </div>
+                    </td>
+                    <td class="board__cell board__cell--quantity">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

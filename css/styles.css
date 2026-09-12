@@ -212,7 +212,7 @@ BASE
   }
 
   body {
-    font-family: sans-serif;
+    font-family: var(--font-main);
     -webkit-font-smoothing: antialiased;
   }
 }
@@ -221,6 +221,200 @@ BASE
 COMPONENTS
 ========================= */
 @layer components {
+  /* =========================
+  PAGE
+  ========================= */
+  .page {
+    color: var(--color-text);
+    background: radial-gradient(
+      circle at top,
+      #292d30 0,
+      var(--color-bg) 45%,
+      #0d0f10 100%
+    );
+    min-height: 100svh;
+  }
+
+  .page__main {
+    display: grid;
+    place-items: center;
+    min-height: 100svh;
+    padding: var(--sp-lg);
+  }
+
+  /* =========================
+  CRAFTING
+  ========================= */
+  .crafting {
+    position: relative;
+    width: min(50rem, 100%);
+
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: linear-gradient(
+      145deg,
+      rgb(40 44 47 / 96%),
+      rgb(25 28 30 / 98%)
+    );
+    box-shadow: var(--shadow-panel);
+  }
+
+  /* Decoración superior */
+  .crafting::before {
+    content: "";
+
+    position: absolute;
+    inset: 0 0 auto;
+
+    height: 3px;
+
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-gold),
+      var(--color-orange),
+      var(--color-gold),
+      transparent
+    );
+  }
+  .crafting__header {
+    text-align: center;
+    padding: var(--sp-lg) var(--sp-xl);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .crafting__eyebrow {
+    display: inline-block;
+    color: var(--color-gold);
+    font-size: var(--fz-sm);
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: var(--sp-xs);
+  }
+  .crafting__title {
+    color: var(--color-gold-light);
+    text-transform: uppercase;
+  }
+  .crafting__description {
+    padding-top: var(--sp-sm);
+    color: var(--color-text-muted);
+    font-size: var(--fz-sm);
+  }
+  .crafting__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-lg);
+    padding: var(--sp-xl);
+  }
+
+  /* =========================
+  BOARD
+  ========================= */
+  .board {
+    border: 1px solid var(--color-border);
+  }
+  .board__header {
+    padding: var(--sp-nm);
+    background: linear-gradient(
+      90deg,
+      var(--color-panel-light),
+      var(--color-panel)
+    );
+    border-bottom: 1px solid var(--color-border);
+  }
+  .board__title {
+    font-size: var(--fz-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-weight: 700;
+  }
+  .board__table {
+    border-collapse: collapse;
+  }
+  .board__head {
+    background-color: #171a1c;
+  }
+  .board__head .board__cell {
+    color: var(--color-text-muted);
+
+    font-size: var(--fz-xs);
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .board__cell {
+    padding: var(--sp-sm) var(--sp-nm);
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--fz-sm);
+  }
+
+  .board__item {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-xs);
+  }
+
+  .board__row:last-child .board__cell {
+    border-bottom: 0;
+  }
+  .board__cell--item {
+    text-align: left;
+  }
+  .board__cell--quantity {
+    text-align: center;
+    width: 7rem;
+  }
+  .board__icon {
+    width: 2rem;
+
+    border: 2px solid #665e4c;
+    border-radius: 4px;
+
+    background: #111;
+
+    box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+  }
+  .board__input {
+    width: 100%;
+
+    padding: var(--sp-xxs) var(--sp-xs);
+
+    border: 1px solid #555750;
+    border-radius: 3px;
+
+    color: var(--color-text);
+    background: #111415;
+
+    font: inherit;
+    font-weight: 700;
+
+    text-align: center;
+
+    outline: none;
+
+    transition:
+      border-color 150ms ease,
+      box-shadow 150ms ease;
+  }
+
+  .board__input:hover {
+    border-color: var(--color-gold);
+  }
+
+  .board__input:focus {
+    border-color: var(--color-gold-light);
+
+    box-shadow: 0 0 0 2px rgb(201 166 91 / 15%);
+  }
+
+  /* Quitar flechas en algunos navegadores */
+
+  .board__input::-webkit-inner-spin-button,
+  .board__input::-webkit-outer-spin-button {
+    opacity: 1;
+  }
 }
 
 /* =========================
