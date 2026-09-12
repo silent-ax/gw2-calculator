@@ -174,9 +174,26 @@ BASE
 ========================= */
 @layer base {
   :root {
-    /* =========================
-    TODO: CONFIG
-    ========================= */
+    --color-bg: #121416;
+    --color-bg-light: #1b1e21;
+
+    --color-panel: #202428;
+    --color-panel-light: #272c30;
+
+    --color-border: #4b4f4b;
+    --color-border-light: #68665a;
+
+    --color-text: #e8e4d8;
+    --color-text-muted: #a7a49b;
+
+    --color-gold: #c9a65b;
+    --color-gold-light: #e4c879;
+
+    --color-orange: #c76b32;
+
+    --shadow-panel: 0 12px 30px rgb(0 0 0 / 40%);
+
+    --font-main: "Trebuchet MS", Arial, sans-serif;
 
     --fz-xs: 0.6rem;
     --fz-sm: 0.8rem;
