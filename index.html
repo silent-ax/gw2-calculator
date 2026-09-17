@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Crafting calculator</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -44,7 +44,7 @@
                     <th class="board__cell board__cell--quantity">Cantidad</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody data-js="items-board">
                   <tr class="board__row">
                     <td class="board__cell board__cell--item">
                       <div class="board__item">
@@ -57,7 +57,12 @@
                       </div>
                     </td>
                     <td class="board__cell board__cell--quantity">
-                      <input type="number" class="board__input" value="1" />
+                      <input
+                        data-input=""
+                        type="number"
+                        class="board__input"
+                        value="1"
+                      />
                     </td>
                   </tr>
                 </tbody>
@@ -72,14 +77,17 @@
               </div>
 
               <table class="board__table">
+                <caption class="board__subtitle">
+                  Uncrafteable
+                </caption>
                 <thead class="board__head">
                   <tr class="board__row">
                     <th class="board__cell board__cell--item">Item</th>
                     <th class="board__cell board__cell--quantity">Cantidad</th>
                   </tr>
                 </thead>
-                <tbody data-js="tbody">
-                  <!-- <tr class="board__row">
+                <tbody data-js="uncrafteable-table">
+                  <tr class="board__row">
                     <td class="board__cell board__cell--item">
                       <div class="board__item">
                         <img
@@ -91,7 +99,34 @@
                       </div>
                     </td>
                     <td class="board__cell board__cell--quantity">2</td>
-                  </tr> -->
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="board__table">
+                <caption class="board__subtitle">
+                  Crafteable
+                </caption>
+                <thead class="board__head">
+                  <tr class="board__row">
+                    <th class="board__cell board__cell--item">Item</th>
+                    <th class="board__cell board__cell--quantity">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody data-js="crafteable-table">
+                  <tr class="board__row">
+                    <td class="board__cell board__cell--item">
+                      <div class="board__item">
+                        <img
+                          src="https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png"
+                          alt="item image"
+                          class="board__icon"
+                        />
+                        <span>item 1</span>
+                      </div>
+                    </td>
+                    <td class="board__cell board__cell--quantity">2</td>
+                  </tr>
                 </tbody>
               </table>
             </div>

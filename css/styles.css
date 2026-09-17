@@ -334,6 +334,16 @@ COMPONENTS
   .board__head {
     background-color: #171a1c;
   }
+
+  .board__subtitle {
+    background-color: var(--color-bg);
+    font-size: var(--fz-xs);
+    padding: var(--sp-xxs);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+
   .board__head .board__cell {
     color: var(--color-text-muted);
 
@@ -345,7 +355,7 @@ COMPONENTS
   }
 
   .board__cell {
-    padding: var(--sp-sm) var(--sp-nm);
+    padding: var(--sp-xs) var(--sp-nm);
     border-bottom: 1px solid var(--color-border);
     font-size: var(--fz-sm);
   }
