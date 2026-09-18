@@ -14,6 +14,29 @@ const ids = {
   orichalcumOre: 11,
   rubyOrichalcumAmulet: 12,
   orichalcumChain: 13,
+  rubyOrichalcumRing: 14,
+  orichalcumBand: 15,
+  blackDiamondOrichalcumEarring: 16,
+  exquisiteBlackDiamondJewel: 17,
+  blackDiamond: 18,
+  serpentiteOrichalcumAmulet: 19,
+  exquisiteSerpentiteJewel: 20,
+  blackDiamondOrichalcumRing: 21,
+  blackDiamondOrichalcumAmulet: 22,
+  serpentiteOrichalcumEarring: 23,
+  serpentiteOrichalcumRing: 24,
+  jadeOrichalcumEarring: 25,
+  exquisiteJadeJewel: 26,
+  chunkofPureJade: 27,
+  jadeOrichalcumAmulet: 28,
+  jadeOrichalcumRing: 29,
+  opalOrichalcumEarring: 30,
+  exquisiteOpalJewel: 31,
+  opalOrb: 32,
+  opalCrystal: 33,
+  freshwaterPearlOrichalcumRing: 34,
+  exquisiteFreshwaterPearl: 35,
+  freshwaterPearl: 36,
 };
 
 const bom = new Map([
@@ -34,11 +57,146 @@ const bom = new Map([
     ],
   ],
   [
+    ids.rubyOrichalcumRing,
+    [
+      { id: ids.exquisiteRubyJewel, qty: 5 },
+      { id: ids.orichalcumBand, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.blackDiamondOrichalcumEarring,
+    [
+      { id: ids.exquisiteBlackDiamondJewel, qty: 5 },
+      { id: ids.orichalcumHook, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.blackDiamondOrichalcumAmulet,
+    [
+      { id: ids.exquisiteBlackDiamondJewel, qty: 5 },
+      { id: ids.orichalcumChain, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.blackDiamondOrichalcumRing,
+    [
+      { id: ids.exquisiteBlackDiamondJewel, qty: 5 },
+      { id: ids.orichalcumBand, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.serpentiteOrichalcumAmulet,
+    [
+      { id: ids.exquisiteSerpentiteJewel, qty: 5 },
+      { id: ids.orichalcumChain, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.serpentiteOrichalcumEarring,
+    [
+      { id: ids.exquisiteSerpentiteJewel, qty: 5 },
+      { id: ids.orichalcumHook, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.serpentiteOrichalcumRing,
+    [
+      { id: ids.exquisiteSerpentiteJewel, qty: 5 },
+      { id: ids.orichalcumBand, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.jadeOrichalcumEarring,
+    [
+      { id: ids.exquisiteJadeJewel, qty: 5 },
+      { id: ids.orichalcumHook, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.jadeOrichalcumAmulet,
+    [
+      { id: ids.exquisiteJadeJewel, qty: 5 },
+      { id: ids.orichalcumChain, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.jadeOrichalcumRing,
+    [
+      { id: ids.exquisiteJadeJewel, qty: 5 },
+      { id: ids.orichalcumBand, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.opalOrichalcumEarring,
+    [
+      { id: ids.exquisiteOpalJewel, qty: 5 },
+      { id: ids.orichalcumHook, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.freshwaterPearlOrichalcumRing,
+    [
+      { id: ids.exquisiteFreshwaterPearl, qty: 5 },
+      { id: ids.orichalcumHook, qty: 1 },
+      { id: ids.orichalcumSetting, qty: 1 },
+    ],
+  ],
+  [
+    ids.exquisiteFreshwaterPearl,
+    [
+      { id: ids.freshwaterPearl, qty: 1 },
+      { id: ids.orichalcumFiligree, qty: 1 },
+      { id: ids.globOfEctoplasm, qty: 1 },
+    ],
+  ],
+  [
+    ids.exquisiteOpalJewel,
+    [
+      { id: ids.opalOrb, qty: 1 },
+      { id: ids.orichalcumFiligree, qty: 1 },
+      { id: ids.globOfEctoplasm, qty: 1 },
+    ],
+  ],
+  [
     ids.exquisiteRubyJewel,
     [
       { id: ids.rubyOrb, qty: 1 },
       { id: ids.orichalcumFiligree, qty: 1 },
       { id: ids.globOfEctoplasm, qty: 1 },
+    ],
+  ],
+  [
+    ids.exquisiteJadeJewel,
+    [
+      { id: ids.chunkofPureJade, qty: 1 },
+      { id: ids.orichalcumFiligree, qty: 1 },
+      { id: ids.globOfEctoplasm, qty: 1 },
+    ],
+  ],
+  [
+    ids.exquisiteBlackDiamondJewel,
+    [
+      { id: ids.blackDiamond, qty: 1 },
+      { id: ids.orichalcumFiligree, qty: 1 },
+      { id: ids.globOfEctoplasm, qty: 1 },
+    ],
+  ],
+  [
+    ids.opalOrb,
+    [
+      { id: ids.opalCrystal, qty: 2 },
+      { id: ids.pileOfIncandescentDust, qty: 5 },
     ],
   ],
   [
@@ -48,6 +206,7 @@ const bom = new Map([
       { id: ids.pileOfIncandescentDust, qty: 5 },
     ],
   ],
+  [ids.orichalcumBand, [{ id: ids.orichalcumIngot, qty: 3 }]],
   [ids.orichalcumFiligree, [{ id: ids.orichalcumIngot, qty: 2 }]],
   [ids.orichalcumIngot, [{ id: ids.orichalcumOre, qty: 2 }]],
   [ids.orichalcumHook, [{ id: ids.orichalcumIngot, qty: 2 }]],
@@ -62,6 +221,14 @@ const materialsData = new Map([
       name: "Ruby Orichalcum Earring",
       image:
         "https://render.guildwars2.com/file/29F124099BBC31F0AA34B9596A163A99652D6512/433703.png",
+    },
+  ],
+  [
+    ids.rubyOrichalcumRing,
+    {
+      name: "Ruby Orichalcum Ring",
+      image:
+        "https://render.guildwars2.com/file/F60D6E7659B061E3BFE95F6A0102EE07A97CCF25/455589.png",
     },
   ],
   [
@@ -160,6 +327,182 @@ const materialsData = new Map([
         "https://render.guildwars2.com/file/EE1EAACDB79ECA661EDFD43E95242A027550AC54/219504.png",
     },
   ],
+  [
+    ids.blackDiamondOrichalcumEarring,
+    {
+      name: "Black Diamond Orichalcum Earring",
+      image:
+        "https://render.guildwars2.com/file/F3FEE72B9F390463CCD461DF5E40261BFCCEB11B/1203060.png",
+    },
+  ],
+  [
+    ids.blackDiamondOrichalcumAmulet,
+    {
+      name: "Black Diamond Orichalcum Amulet",
+      image:
+        "https://render.guildwars2.com/file/75CD103E5706CB47D33B39783F6C25A59F7F3164/1203059.png",
+    },
+  ],
+  [
+    ids.blackDiamondOrichalcumRing,
+    {
+      name: "Black Diamond Orichalcum Ring",
+      image:
+        "https://render.guildwars2.com/file/212AF33DC2450BF7B59B61C5746F07C39DF1E703/1203061.png",
+    },
+  ],
+  [
+    ids.exquisiteBlackDiamondJewel,
+    {
+      name: "Exquisite Black Diamond Jewel",
+      image:
+        "https://render.guildwars2.com/file/A9240258AD32121963FF71360500B29E0C0E29EE/1203033.png",
+    },
+  ],
+  [
+    ids.blackDiamond,
+    {
+      name: "Black Diamond",
+      image:
+        "https://render.guildwars2.com/file/4E096C75FAB2EF90A82648A43C64FC226267FB92/1202991.png",
+    },
+  ],
+  [
+    ids.orichalcumBand,
+    {
+      name: "Orichalcum Band",
+      image:
+        "https://render.guildwars2.com/file/EE24D0CD5257BFE1139D405D405729F2603BFA47/219508.png",
+    },
+  ],
+  [
+    ids.serpentiteOrichalcumAmulet,
+    {
+      name: "Serpentite Orichalcum Amulet",
+      image:
+        "https://render.guildwars2.com/file/0B0504ADEBDC5D96C7DB1B1BD14FDD24712662CB/1203062.png",
+    },
+  ],
+  [
+    ids.serpentiteOrichalcumEarring,
+    {
+      name: "Serpentite Orichalcum Earring",
+      image:
+        "https://render.guildwars2.com/file/1DB39D44DF06ED10B931641A0599C7A5AE70C872/1203063.png",
+    },
+  ],
+  [
+    ids.serpentiteOrichalcumRing,
+    {
+      name: "Serpentite Orichalcum Ring",
+      image:
+        "https://render.guildwars2.com/file/CCFCF274976AA5F19CAC680A2B681C087B31B663/1203064.png",
+    },
+  ],
+  [
+    ids.exquisiteSerpentiteJewel,
+    {
+      name: "Exquisite Serpentite Jewel",
+      image:
+        "https://render.guildwars2.com/file/DA99DBD87B3171202641F52B7098F99826BDA3AD/1203034.png",
+    },
+  ],
+  [
+    ids.jadeOrichalcumEarring,
+    {
+      name: "Jade Orichalcum Earring",
+      image:
+        "https://render.guildwars2.com/file/A8E3D8AF74753BEEFBAEEB2C4594BB1001511DAA/2593554.png",
+    },
+  ],
+  [
+    ids.jadeOrichalcumAmulet,
+    {
+      name: "Jade Orichalcum Amulet",
+      image:
+        "https://render.guildwars2.com/file/0D01FB013E7912E7BE1CDD367D2E049C68716C1C/2593558.png",
+    },
+  ],
+  [
+    ids.jadeOrichalcumRing,
+    {
+      name: "Jade Orichalcum Ring",
+      image:
+        "https://render.guildwars2.com/file/170C4A6E2471A0D397563F6274CDDF0AF349717A/2596747.png",
+    },
+  ],
+  [
+    ids.exquisiteJadeJewel,
+    {
+      name: "Exquisite Jade Jewel",
+      image:
+        "https://render.guildwars2.com/file/48D61ED3BBA6AAB11FDB22003EE4244C010DF24C/2595104.png",
+    },
+  ],
+  [
+    ids.chunkofPureJade,
+    {
+      name: "Chunk of Pure Jade",
+      image:
+        "https://render.guildwars2.com/file/C7E13105A754F639BB6C7A439F06CF45C9EB1C18/2595189.png",
+    },
+  ],
+  [
+    ids.opalOrichalcumEarring,
+    {
+      name: "Opal Orichalcum Earring",
+      image:
+        "https://render.guildwars2.com/file/5007F9AD422CA0F47619EC48DF1CE5E0D1B40276/433702.png",
+    },
+  ],
+  [
+    ids.exquisiteOpalJewel,
+    {
+      name: "Exquisite Opal Jewel",
+      image:
+        "https://render.guildwars2.com/file/E9AAE966EC3613B4E00D0BB4ABA7F39DA19D7402/220971.png",
+    },
+  ],
+  [
+    ids.opalOrb,
+    {
+      name: "Opal Orb",
+      image:
+        "https://render.guildwars2.com/file/62CE38CB99469CBADDAD6FF4A221F75B636AA55D/220957.png",
+    },
+  ],
+  [
+    ids.opalCrystal,
+    {
+      name: "Opal Crystal",
+      image:
+        "https://render.guildwars2.com/file/D121707FEAAB6D71D1C807C7E70C75CD1E4F6552/220956.png",
+    },
+  ],
+  [
+    ids.freshwaterPearlOrichalcumRing,
+    {
+      name: "Freshwater Pearl Orichalcum Ring",
+      image:
+        "https://render.guildwars2.com/file/D998320E2C7CCF220269747A549CD1FB2206399F/1203072.png",
+    },
+  ],
+  [
+    ids.exquisiteFreshwaterPearl,
+    {
+      name: "Exquisite Freshwater Pearl",
+      image:
+        "https://render.guildwars2.com/file/DF36C75D9294FCFE9B0A1DE3D8975477400CC9FC/1202984.png",
+    },
+  ],
+  [
+    ids.freshwaterPearl,
+    {
+      name: "Freshwater Pearl",
+      image:
+        "https://render.guildwars2.com/file/629318080FD49E701566ED98DF98FA54033AC9CB/223939.png",
+    },
+  ],
 ]);
 
 function calculateRequiredMaterials(bom, items) {
@@ -174,8 +517,6 @@ function calculateRequiredMaterials(bom, items) {
     });
 
     if (!recipe) return;
-
-    // console.log(children);
 
     for (const ingredient of recipe) {
       const requiredQuantity = ingredient.qty * qty;
@@ -315,6 +656,18 @@ document.addEventListener("change", (e) => {
 const items = JSON.parse(localStorage.getItem("data")) ?? [
   { id: ids.rubyOrichalcumEarring, qty: 1 },
   { id: ids.rubyOrichalcumAmulet, qty: 1 },
+  { id: ids.rubyOrichalcumRing, qty: 1 },
+  { id: ids.blackDiamondOrichalcumEarring, qty: 1 },
+  { id: ids.blackDiamondOrichalcumAmulet, qty: 1 },
+  { id: ids.blackDiamondOrichalcumRing, qty: 1 },
+  { id: ids.serpentiteOrichalcumEarring, qty: 1 },
+  { id: ids.serpentiteOrichalcumAmulet, qty: 1 },
+  { id: ids.serpentiteOrichalcumRing, qty: 1 },
+  { id: ids.jadeOrichalcumAmulet, qty: 1 },
+  { id: ids.jadeOrichalcumEarring, qty: 1 },
+  { id: ids.jadeOrichalcumRing, qty: 1 },
+  { id: ids.opalOrichalcumEarring, qty: 1 },
+  { id: ids.freshwaterPearl, qty: 1 },
 ];
 
 renderItems(items);
