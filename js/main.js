@@ -667,7 +667,7 @@ const items = JSON.parse(localStorage.getItem("data")) ?? [
   { id: ids.jadeOrichalcumEarring, qty: 1 },
   { id: ids.jadeOrichalcumRing, qty: 1 },
   { id: ids.opalOrichalcumEarring, qty: 1 },
-  { id: ids.freshwaterPearl, qty: 1 },
+  { id: ids.freshwaterPearlOrichalcumRing, qty: 1 },
 ];
 
 renderItems(items);
